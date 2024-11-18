@@ -265,10 +265,6 @@ body {
   padding: 9.6rem 0;
 }
 
-.meals-heading {
-  text-align: center;
-}
-
 .meal {
   box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
   border-radius: 1.1rem;
@@ -343,32 +339,14 @@ body {
   color: #e67e22;
 }
 
-.list {
-  display: flex;
-  flex-direction: column;
-  gap: 1.6rem;
-  list-style: none;
-}
-
-.list-item {
-  display: flex;
-  align-items: center;
-  font-size: 1.8rem;
-  gap: 1.6rem;
-}
-
-.list-icon {
-  color: #e67e22;
-  height: 3rem;
-  width: 3rem;
-}
-
 .all-recipes {
   text-align: center;
   font-size: 1.8rem;
 }
 
+/**************************/
 /* TESTIMONIALS SECTION */
+/**************************/
 
 .section-testimonials {
   background-color: #fdf2e9;
@@ -421,4 +399,46 @@ body {
 
 .gallery-img:hover {
   transform: scale(1.1);
+}
+
+/**************************/
+/* PRICING SECTION */
+/**************************/
+.section-pricing {
+  padding: 9.6rem 0;
+}
+
+.plan-header {
+  text-align: center;
+  margin-bottom: 4.8rem;
+}
+.plan-name {
+  color: #cf711f;
+  font-weight: 600;
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.75;
+  margin-bottom: 3.2rem;
+}
+
+.plan-price {
+  font-size: 6.2rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 1.6rem;
+}
+.plan-price span {
+  font-size: 3rem;
+  font-weight: 500;
+  margin-right: 0.8rem;
+}
+.plan-text {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  color: #6f6f6f;
+}
+
+.plan-sign-up {
+  text-align: center;
+  margin-top: 4.8rem;
 }

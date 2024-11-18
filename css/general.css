@@ -112,6 +112,28 @@
   border-bottom: 1px solid transparent;
 }
 
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  list-style: none;
+}
+
+.list-item {
+  display: flex;
+  align-items: center;
+  font-size: 1.8rem;
+  gap: 1.6rem;
+}
+
+.list-icon {
+  color: #e67e22;
+  height: 3rem;
+  width: 3rem;
+}
+
+/* HELPER/SETTINGS CLASSES */
+
 .margin-right-sm {
   margin-right: 1.6rem !important;
 }
@@ -121,4 +143,8 @@
 
 strong {
   font-weight: 500;
+}
+
+.center-text {
+  text-align: center;
 }
