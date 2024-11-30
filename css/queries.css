@@ -163,3 +163,14 @@
     z-index: 1000;
   }
 }
+
+/**************************/
+/* BELOW 704px (Small Tablets) */
+/**************************/
+
+@media (max-width: 44em) {
+  .grid--3-cols,
+  .grid--4-cols {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
