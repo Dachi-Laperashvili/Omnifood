@@ -38,3 +38,28 @@ allLinks.forEach((link) => {
     }
   });
 });
+
+/////////////////////////////////////////////
+// Sticky Navigation
+
+const sectionHero = document.querySelector(".section-hero");
+
+// observing hero section in relation to viewport
+const obs = new IntersectionObserver(
+  function (entries) {
+    const ent = entries[0];
+    // when hero section dissapears from viewport adding sticky class to header
+    ent.isIntersecting === false
+      ? document.body.classList.add("sticky")
+      : document.body.classList.remove("sticky");
+  },
+  {
+    // setting root to null to observe element in relation to viewport
+    root: null,
+    // whenever we have 0% of element in viewport callback function gets executedd
+    threshold: 0,
+    // adding -80px margin outside root to fix problem of navigation overlapping featured in section
+    rootMargin: "-90px",
+  }
+);
+obs.observe(sectionHero);
