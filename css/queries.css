@@ -118,11 +118,12 @@
     width: 100%;
     height: 100vh;
     transform: translateX(100%);
+    backdrop-filter: blur(10px);
 
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgba(255, 255, 255, 0.97);
+    background-color: rgba(255, 255, 255, 0.5);
 
     opacity: 0;
     /* hiding from screen readers */
